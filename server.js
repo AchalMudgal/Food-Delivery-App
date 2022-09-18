@@ -43,6 +43,7 @@ async function init(){
 };
 
 require("./routes/auth.routes")(app);
+require("./routes/order.routes")(app);
 
 app.listen(configs.PORT, ()=>{
     console.log("Server is running at PORT : ", configs.PORT);
